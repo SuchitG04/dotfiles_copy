@@ -19,10 +19,13 @@ local plugins = {
         config = function()
             require("lualine").setup {
                 icons_enabled = true,
-                theme = 'tokyonight'
+                theme = 'nightfox'
             }
         end
     },
+    ---------------------------------------------------------------
+    --icons
+    { 'nvim-tree/nvim-web-devicons' },
     ---------------------------------------------------------------
     --treeshitter
     {
@@ -37,9 +40,6 @@ local plugins = {
         dependencies = { 'nvim-lua/plenary.nvim' },
     },
     ---------------------------------------------------------------
-    --tmux-nvim
-    'christoomey/vim-tmux-navigator',
-    ---------------------------------------------------------------
     --surround
     {
         "kylechui/nvim-surround",
@@ -51,6 +51,12 @@ local plugins = {
         end
     },
     ---------------------------------------------------------------
+    --tree
+    {
+        'nvim-tree/nvim-tree.lua',
+        dependencies = { 'nvim-tree/nvim-web-devicons',},
+    },
+    ---------------------------------------------------------------
     --autopairs
     {
         'windwp/nvim-autopairs',
@@ -59,16 +65,7 @@ local plugins = {
     },
     ---------------------------------------------------------------
     --colorscheme
-    {
-        "folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-        opts = {},
-        config = function()
-            vim.cmd("colorscheme tokyonight-night")
-        end
-    },
-    ---------------------------------------------------------------
+    { "EdenEast/nightfox.nvim" },
     --codeium
     "Exafunction/codeium.vim",
     ---------------------------------------------------------------
@@ -92,8 +89,6 @@ local plugins = {
     ---------------------------------------------------------------
     --for mason-lspconfig i dont know why
     "williamboman/mason-lspconfig.nvim",
-    ---------------------------------------------------------------
-    'christoomey/vim-tmux-navigator',
     ---------------------------------------------------------------
     {
         "L3MON4D3/LuaSnip",
