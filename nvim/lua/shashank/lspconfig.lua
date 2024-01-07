@@ -19,6 +19,9 @@ lspconfig.pyright.setup {
 lspconfig.jdtls.setup {
     capabilities = capabilities
 }
+lspconfig.tsserver.setup {
+    capabilities = capabilities
+}
 
 
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
