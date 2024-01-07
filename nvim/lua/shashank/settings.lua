@@ -22,6 +22,5 @@ vim.g.maplocalleader   = " "
 vim.opt.updatetime     = 50
 vim.opt.colorcolumn    = "1000"
 vim.opt.termguicolors  = true
-vim.g.vimwiki_list     = { { path = '~/vimwiki/', syntax = 'markdown', ext = '.md' } }
 vim.cmd('colorscheme carbonfox')
 vim.opt.guicursor = "a:block-blinkon0"
