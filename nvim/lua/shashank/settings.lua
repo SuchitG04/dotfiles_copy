@@ -1,6 +1,5 @@
 vim.opt.compatible     = false
 vim.opt.number         = true
-vim.opt.guicursor      = ""
 vim.opt.relativenumber = true
 vim.opt.tabstop        = 4
 vim.opt.shiftwidth     = 4
@@ -25,3 +24,4 @@ vim.opt.colorcolumn    = "1000"
 vim.opt.termguicolors  = true
 vim.g.vimwiki_list     = { { path = '~/vimwiki/', syntax = 'markdown', ext = '.md' } }
 vim.cmd('colorscheme carbonfox')
+vim.opt.guicursor = "a:block-blinkon0"
