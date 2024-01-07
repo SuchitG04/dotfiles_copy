@@ -22,9 +22,6 @@ lspconfig.jdtls.setup {
 lspconfig.tsserver.setup {
     capabilities = capabilities
 }
-lspconfig.ocamllsp.setup {
-    capabilities = capabilities
-}
 
 
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
