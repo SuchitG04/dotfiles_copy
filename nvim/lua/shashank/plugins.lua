@@ -19,7 +19,7 @@ local plugins = {
         config = function()
             require("lualine").setup {
                 icons_enabled = true,
-                theme = 'nightfox'
+                theme = 'wal'
             }
         end
     },
@@ -65,7 +65,8 @@ local plugins = {
     },
     ---------------------------------------------------------------
     --colorscheme
-    { "EdenEast/nightfox.nvim" },
+    -- { "EdenEast/nightfox.nvim" },
+    {"dylanaraps/wal.vim"},
     --codeium
     "Exafunction/codeium.vim",
     ---------------------------------------------------------------

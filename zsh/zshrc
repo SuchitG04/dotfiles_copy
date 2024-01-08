@@ -1,3 +1,4 @@
+wal -qR
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -36,5 +37,5 @@ alias ls='exa'
 alias f='cd $(fd -t d -H | fzf)'
 alias rate='sudo rate-mirrors --allow-root --protocol https arch | tee /etc/pacman.d/mirrorlist'
 alias backupmirrors='sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak'
-alias ze='zellij'
+alias z='zellij'
 alias gall='git add . && git commit -am "$(date)" && git push -u origin main'
