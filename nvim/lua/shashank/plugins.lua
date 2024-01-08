@@ -19,7 +19,7 @@ local plugins = {
         config = function()
             require("lualine").setup {
                 icons_enabled = true,
-                theme = 'wal'
+                theme = 'pywal-nvim'
             }
         end
     },
@@ -65,55 +65,60 @@ local plugins = {
     },
     ---------------------------------------------------------------
     --colorscheme
-    -- { "EdenEast/nightfox.nvim" },
-    {"dylanaraps/wal.vim"},
-    --codeium
-    "Exafunction/codeium.vim",
-    ---------------------------------------------------------------
-    --nvim-treesitter-playground
-    "nvim-treesitter/playground",
-    ---------------------------------------------------------------
-    --undo tree
-    "mbbill/undotree",
-    ---------------------------------------------------------------
-    --for git
-    "tpope/vim-fugitive",
-    ---------------------------------------------------------------
-    --for i dont know why
-    "nvim-tree/nvim-web-devicons",
-    ---------------------------------------------------------------
-    --for lsp keymaps and stuff
-    "neovim/nvim-lspconfig",
-    ---------------------------------------------------------------
-    --for downloading language servers
-    "williamboman/mason.nvim",
-    ---------------------------------------------------------------
-    --for mason-lspconfig i dont know why
-    "williamboman/mason-lspconfig.nvim",
-    ---------------------------------------------------------------
-    {
-        "L3MON4D3/LuaSnip",
-        version = "v2.*",
-        build = "make install_jsregexp"
+    { 'AlphaTechnolog/pywal.nvim', 
+    	as = 'pywal',
+        config = function()
+            require("pywal").setup()
+        end
     },
-    ---------------------------------------------------------------
-    {
+---------------------------------------------------------------
+--codeium
+"Exafunction/codeium.vim",
+---------------------------------------------------------------
+--nvim-treesitter-playground
+"nvim-treesitter/playground",
+---------------------------------------------------------------
+--undo tree
+"mbbill/undotree",
+---------------------------------------------------------------
+--for git
+"tpope/vim-fugitive",
+---------------------------------------------------------------
+--for i dont know why
+"nvim-tree/nvim-web-devicons",
+---------------------------------------------------------------
+--for lsp keymaps and stuff
+"neovim/nvim-lspconfig",
+---------------------------------------------------------------
+--for downloading language servers
+"williamboman/mason.nvim",
+---------------------------------------------------------------
+--for mason-lspconfig i dont know why
+"williamboman/mason-lspconfig.nvim",
+---------------------------------------------------------------
+{
+    "L3MON4D3/LuaSnip",
+    version = "v2.*",
+    build = "make install_jsregexp"
+},
+---------------------------------------------------------------
+{
+    'hrsh7th/nvim-cmp',
+    dependencies = {
+        'hrsh7th/cmp-nvim-lsp',
+        'hrsh7th/cmp-buffer',
+        'hrsh7th/cmp-path',
+        'hrsh7th/cmp-cmdline',
         'hrsh7th/nvim-cmp',
-        dependencies = {
-            'hrsh7th/cmp-nvim-lsp',
-            'hrsh7th/cmp-buffer',
-            'hrsh7th/cmp-path',
-            'hrsh7th/cmp-cmdline',
-            'hrsh7th/nvim-cmp',
-            'L3MON4D3/LuaSnip',
-            'saadparwaiz1/cmp_luasnip',
-            'rafamadriz/friendly-snippets',
-            'hrsh7th/cmp-nvim-lsp'
-        }
-    },
-    ---------------------------------------------------------------
-    { "vimwiki/vimwiki" },
-    ---------------------------------------------------------------
+        'L3MON4D3/LuaSnip',
+        'saadparwaiz1/cmp_luasnip',
+        'rafamadriz/friendly-snippets',
+        'hrsh7th/cmp-nvim-lsp'
+    }
+},
+---------------------------------------------------------------
+{ "vimwiki/vimwiki" },
+---------------------------------------------------------------
 }
 
 
