@@ -1,7 +1,6 @@
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id ~/.config/polybar/launch.sh
-exec --no-startup-id wal -R
 exec --no-startup-id xrandr --output eDP-1 --scale 0.5x0.5
+exec --no-startup-id wal -R
+exec --no-startup-id ~/.config/polybar/launch.sh
 set $mod Mod4
 set $alt Mod1
 font pango:Fira Code Nerd Font 16
