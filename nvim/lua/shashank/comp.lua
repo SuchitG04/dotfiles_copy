@@ -1,6 +1,6 @@
 -- Set up nvim-cmp.
-local cmp = require'cmp'
-local luasnip = require'luasnip'
+local cmp = require 'cmp'
+local luasnip = require 'luasnip'
 
 cmp.setup({
     snippet = {
