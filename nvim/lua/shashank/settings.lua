@@ -22,4 +22,5 @@ vim.g.maplocalleader   = " "
 vim.opt.updatetime     = 50
 vim.opt.colorcolumn    = "1000"
 vim.opt.termguicolors  = true
+vim.cmd("colorscheme carbonfox")
 vim.opt.guicursor      = "a:block-blinkon0"
