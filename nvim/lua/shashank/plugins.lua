@@ -91,12 +91,14 @@ local plugins = {
     --for mason-lspconfig i dont know why
     "williamboman/mason-lspconfig.nvim",
     ---------------------------------------------------------------
+    --snippet manager
     {
         "L3MON4D3/LuaSnip",
         version = "v2.*",
         build = "make install_jsregexp"
     },
     ---------------------------------------------------------------
+    --completions
     {
         'hrsh7th/nvim-cmp',
         dependencies = {
@@ -112,6 +114,7 @@ local plugins = {
         }
     },
     ---------------------------------------------------------------
+    --vimwiki
     { "vimwiki/vimwiki" },
     ---------------------------------------------------------------
 }
