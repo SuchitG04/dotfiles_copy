@@ -25,6 +25,9 @@ lspconfig.tsserver.setup {
 lspconfig.marksman.setup {
     capabilities = capabilities
 }
+lspconfig.ocamllsp.setup {
+    capabilities = capabilities
+}
 
 
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
